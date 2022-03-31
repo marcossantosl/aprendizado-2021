@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400;600;700&display=swap');
+   
+    *
+       {margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       transition: all 0.15s ease-in;}
+
+    body
+        {background: #0f3854;
+        background: radial-gradient(ellipse at center,  #0a2e38 0%, black 70%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Share Tech Mono',monospace;}
+
+    #cron-area
+        {width: 350px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;}
+
+    #cronometro
+        {width: 320px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+        color: #daf6ff;
+        text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);}
+
+    div span
+        {height: 80px;
+        font-size: 35px;
+        display: flex;
+        padding-bottom: 10px;
+        padding-left: 2px;
+        align-items: flex-end;}
+
+    .buttons
+        {text-align: center;
+        margin-top: 20px;}
+
+    button
+        {width: 75px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: transparent;
+        color: #daf6ff;
+        text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+        border-radius: 5px;}
+
+    button:first-child:hover
+        {cursor: pointer;
+        padding: 10px;
+        background-color: #30FCB67e;
+        border-color:  #30FCB657;}
+
+    .pause:hover
+        {background-color: #F9AE0F7e !important;
+        border-color: #F9AE0F57 !important;}
+
+    button:last-child:hover
+        {cursor: pointer;
+        padding: 10px;
+        background-color: #ff33307e;
+        border-color: #ff333057;}

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* importando fonte roboto, não disponível no windows, para o site */
+
+/* site utilizando flexbox, feito para computador e o adaptando para celular(Desktop first) */
+
+* {box-sizing: border-box;} /* Quando você põe o tamanho total do elemento ele também inclui a borda dele no tamanho total, evitando insonsistências nos layouts */
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+.main {
+    background-color: #1D2437;  /* definindo a cor da parte de cima da página antes da imagem carregar, para não aparecer um background branco */
+    background-image: url('../images/bg.png');
+}
+.container {
+    max-width: 1070px;  /* Largura máxima do container na página pegar só 1070, o resto vai ser background do main*/
+    margin: auto;/* Pro container ficar no meio da tela */
+    color: white;
+}
+header {
+    padding-top: 40px;
+}
+.heroArea {
+    display: flex; /*tornando as áreas esquerdas e direitas do heroArea flexível*/
+}
+.heroArea .leftside {
+    flex: 1;
+}
+.heroArea .leftside h1 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px; /* Distância entre uma linha e outra*/
+    margin: 80px 0 30px 0;
+}
+.heroArea .leftside .subtitle{
+    font-size:16;
+    line-height: 1.5;
+    color: #999;
+    margin-bottom: 20px;
+}
+.heroArea .leftside .form {
+    margin-bottom: 20px;
+}
+.heroArea .leftside .form input {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: none;
+    height: 40px;
+    outline: 0;  /* Linha que o navegador produz ao redor do input */
+    color:white;
+    font-size: 14;
+    width: 320px;
+    padding: 0 10px;
+}
+.heroArea .leftside .form button {
+    height: 40px;
+    border: 0;
+    background-color: #0071b7;
+    color: white;
+    font-size: 14px;
+    padding: 0 10px; /* 0 px  na alutra e 20 px nas laterais*/
+    margin-left: 8px;
+    cursor: pointer;  
+}
+.heroArea .leftside .form button:hover { /* propriedades do botão quando o mouse for passado em cima */
+    opacity: 0.7;
+}
+.heroArea .leftside .techs img{
+    margin-right: 10px;
+    margin-bottom: 80px;
+}
+
+.heroArea .rightside {
+    background-image: url('.../images/hero.png');   /* definindo o hero png como imagem de fundo para não atrapalhar no posicionamento dos itens e para uma boa colocação da imagem no site na versão mobile, a imagem hero.png vai ser definida de acordo com o tamanho e o posicionamento dos outros ítens */
+    flex: 1;
+    background-size: 100% auto;  /* 100% de largura no hero png e a altura definda como automático*/
+} /* repartindo leftside e rightside em partes iguais */
+
+/* SECTION INFO */
+
+.info {
+    height: 100px;
+    border-bottom: 2px solid #E5E5E5;
+    display: flex;
+    justify-content: center;  /* no meio horizontalmente */
+    align-items: center; /* no meio verticalmente */
+}
+.info-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #C2C8CB;
+    margin: 0 10px;
+}
+.info-circle {
+    width: 6px;
+    height: 6px;
+    background-color: #C2C8CB;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+/* SECTION INSTRUCTIONS*/
+
+.instructions {
+
+}
+.inst-container {
+    margin:auto;
+    max-width: 900px;
+    padding: 70px;
+}
+.inst-item {
+    border-left: 3px solid #ecf0f3;
+    display: flex;
+}
+.inst-circle{
+    border-radius: 50%;
+    width: 17px;
+    height:17px;
+    background-color: #0071b7;   
+    margin-left: -9px;
+}
+.inst-text{ 
+    flex: 1;
+    margin-left: 50px;
+
+}
+.inst-text h2 {
+    font-size: 32px;
+    color: black;
+    margin:-10px 0 30px 0; /* BULLET POINT ALINHADO COM O TEXTO */
+
+}
+.inst-text p {
+    font-size: 16;
+    line-height: 23px;
+    color: #777; 
+    margin-bottom: 80px;
+}
+.inst-item:last-child {  /* ÚLTIMO ÍTEM DO INST-ITEM */
+   border-left: none;
+}
+.inst-item:last-child p {  /* ÚLTIMO ÍTEM DO INST-ITEM NO P */
+    margin-bottom: 0px;
+ }
+
+/* SECTION CTA */
+
+.cta {
+ background-color: #1d2437;
+ border-bottom: 2px solid #999;
+
+}
+.cta-container {
+    margin:auto;
+    max-width: 680px;
+    display: flex;
+    padding: 100px 0;
+    
+}
+.cta-left {
+    flex:1;
+    margin-right: 30px;
+}
+.cta-left h2 {
+    font-size:40;
+    margin: 0;
+    color: #fff
+}
+.cta-left p {
+    font-size:18;
+    line-height: 25px;
+    color: #777;
+}
+.cta-right input {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: none;
+    height: 40px;
+    outline: 0;  /* Linha que o navegador produz ao redor do input */
+    color:white;
+    font-size: 14;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 18px;
+}
+.cta-right button {
+    height: 40px;
+    border: 0;
+    background-color: #0071b7;
+    color: white;
+    font-size: 14px;
+    padding: 0 10px; /* 0 px  na alutra e 20 px nas laterais*/
+    cursor: pointer;
+    width: 100%;
+}
+.cta-right button:hover { /* propriedades do botão quando o mouse for passado em cima */
+    opacity: 0.7;
+}
+.cta-right {
+    flex:1;
+    margin-left: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1d2437;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;/* o resto do espaço total entre eles */
+    align-items: center;
+    margin: auto;
+    padding: 40px 0;
+    max-width: 1070px;
+}
+.footer-left {
+}
+.footer-right {
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+    line-height: 25px;
+}
+
+.footer-right a {
+    color: #777;
+    text-decoration: none;
+}
+.footer-right a:hover {
+    text-decoration: underline;
+}

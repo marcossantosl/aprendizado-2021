@@ -1,0 +1,14 @@
+#exemplo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.verde {
+    background-color: #00ff00;
+}
+.vermelho {
+    background-color: #ff0000;
+}
+.azul {
+    background-color: #0000ff;
+}
