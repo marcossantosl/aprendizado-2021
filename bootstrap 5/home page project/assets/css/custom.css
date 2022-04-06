@@ -1,0 +1,14 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box
+}
+
+#header {
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header .navbar-collapse {
+    width: auto;
+}
